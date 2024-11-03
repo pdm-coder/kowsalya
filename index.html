@@ -1,0 +1,77 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kowsalya P R Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web.css">
+</head>
+
+<body>
+    <header>
+        <div id="left-bunny">
+            <svg width="200" height="390" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="45" cy="35" r="20" fill="Salmon" transform="scale(2)">
+                    <animate attributeName="cy" begin="0s" dur="8s" from="35" to="100%"
+                        values="100; 180; 45; 180; 80; 180; 100; 180; 120; 180; 150; 180; 170; 175" ;
+                        repeatCount="indefinite" />
+                </circle>
+            </svg>
+        </div>
+        <div id="name">
+            <h1 class="tag">Hi <img src="images/hi.png" style="width: 35px;">, I’m Kowsalya</h1>
+            <h2 class="tag">Welcome to my portfolio</h2>
+        </div>
+        <div id="side-sqr">
+            <div class="sqr-11"></div>
+            <div class="sqr-22"></div>
+            <div class="sqr-33"></div>
+            <div class="sqr-44"></div>
+            <div class="sqr-55"></div>
+        </div>
+    </header>
+
+    <main>
+        <div id="container">
+            <p id="heading">Experience</p>
+            <div>
+                <h2>Domain Experience</h2>
+                <p>E-Commerce (B2C), Insurance</p>
+                <p><h2>Skills</h2>
+                <ul class="skills">
+                    <li>Java</li>
+                    <li>Springboot</li>
+                    <li>Hibernate</li>
+                    <li>REST API</li>
+                    <li>Design Patterns</li>
+                    <li>Docker</li>
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                </ul>
+                </p>
+            </div>
+            <div>
+                <h2>Roles & Responsiblities</h2>
+                <p class="roles">As a Java developer, providing different business concerns as services with leveraging SpringBoot framework with REST architecture</p>
+            </div>
+            <div>
+                <h2>Certifications</h2>
+                <p>
+                <ul class="skills">
+                    <li>Java Basics</li>
+                    <li>Architecture(SOLID)&Design Patterns</li>
+                    <li>Version Control with Git</li>
+                    <li>Introduction to JUnit</li>
+                    <li>Agile with Atlassian Jira</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <button onclick="topFunction()" id="scrollBtn" title="Go to top"></button>
+    <script src="scroll-script.js"></script>
+</body>
+
+</html>
