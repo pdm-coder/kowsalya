@@ -19,6 +19,11 @@ main {
     line-height: 1.2em;
 }
 
+a {
+    text-decoration: none;
+    color: #0b113f;
+}
+
 #left-bunny {
     background-image: url('images/bunny-1.png');
     background-repeat: no-repeat;
@@ -27,8 +32,23 @@ main {
 
 #name {
     position: absolute;
-    right: 520px;
-    padding-top: 155px;
+    right: 500px;
+    padding-top: 225px;
+}
+
+.tag>img:hover {
+    animation: waving 1.5s linear infinite;
+}
+@keyframes waving {
+    0%, 50%, 100% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(25deg);
+    }
+    70% {
+        transform: rotate(-15deg);
+    }
 }
 
 #side-sqr {
@@ -78,7 +98,7 @@ main {
 }
 
 #container p {
-    color: #0b113f;
+    color: black;
     font-size: 1.2em;
     text-align: justify;
     margin-top: -5px;
@@ -86,6 +106,23 @@ main {
 
 #container h2 {
     color: #1f3641;
+}
+
+.social-link {
+    float: right;
+    margin-right: 130px;
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+.fa-envelope, .fa-github, .fa-linkedin {
+    color: white;
+    padding: 5px;
+}
+
+.fa-github:hover, .fa-linkedin:hover {
+    transform: scale(1.5);
 }
 
 .tag {
@@ -130,9 +167,33 @@ ul.skills {
     display: inline-block;
     padding: 5px 10px;
     margin: 2px;
-    color: #0b113f;
+    color: black;
 }
 
 .roles {
     line-height: 1.6em;
+}
+
+.button {
+    padding: 2px 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #490c4e;
+    background-color: #6F6CD9;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 3px #4a3d85;
+}
+
+.button:hover {
+    background-color: #753e7c;
+    color: whitesmoke;
+}
+
+.button:active {
+    background-color: #753e7c;
+    box-shadow: 0 5px #4a3d85;
+    transform: translateY(2px);
 }
